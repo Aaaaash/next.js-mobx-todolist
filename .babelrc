@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "next/babel",  // Next默认配置
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-decorators-legacy"
+  ]
+}
