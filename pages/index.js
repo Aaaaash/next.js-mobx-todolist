@@ -29,8 +29,6 @@ store.todos.push(
   new Todo('write simpler code')
 );
 
-store.todos[0].finished = true;
-
 @observer
 export default class Main extends react.PureComponent {
   render() {
