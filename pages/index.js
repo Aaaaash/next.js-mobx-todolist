@@ -1,7 +1,8 @@
 import react, { PureComponent } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { observable, computed } from 'mobx';
+import DevTools from 'mobx-react-devtools'
+import { observable, computed, autorun } from 'mobx';
 import { observer } from "mobx-react";
 import TodoListView from '../Container/TodoListView';
 
@@ -39,6 +40,7 @@ export default class Main extends react.PureComponent {
           <title>Hello</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
+        <DevTools />
         <TodoListView todolist={store} />
       </div>
     )
